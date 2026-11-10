@@ -1,0 +1,111 @@
+ /* Page Styling */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        /* Form Container */
+        .container {
+            background-color: white;
+            width: 500px;
+            max-width: 100%;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+            animation: slideIn 1s ease;
+        }
+
+        /* Heading */
+        h2 {
+            text-align: center;
+            color: #5b4bb7;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        /* Labels */
+        label {
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        /* Input Fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+
+        
+        /* Input Focus Effect */
+        input:focus, select:focus {
+            box-shadow: 0 0 8px rgba(118,75,162,0.4);
+        }
+
+        /* Radio and Checkbox */
+        .options {
+            margin-bottom: 18px;
+            color: #444;
+        }
+
+        .options input {
+            margin-right: 5px;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            width: 50%;
+            padding: 12px;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .register {
+            background-color: #667eea;
+        }
+
+        .reset {
+            background-color: #e74c3c;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+        }
+
+        .register:hover {
+            background-color: #5145b5;
+        }
+
+        .reset:hover {
+            background-color: #c0392b;
+        }
